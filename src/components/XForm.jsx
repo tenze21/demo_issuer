@@ -5,6 +5,7 @@ import { Buffer } from "buffer";
 import { setSignedDocuments } from "../slices/signedDocumentSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { saveAs } from "file-saver";
+import { ethers } from "ethers";
 
 window.Buffer = Buffer;
 function XForm({documentBase, signer}) {

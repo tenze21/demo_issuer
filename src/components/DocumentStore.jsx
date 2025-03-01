@@ -16,8 +16,8 @@ function DocumentStore() {
   const connectWallet = async () => {
     if (window.ethereum) {
       try {
-        const provider = new ethers.BrowserProvider(window.ethereum);
-        const newSigner = await provider.getSigner();
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const newSigner = provider.getSigner();
         const address = await newSigner.getAddress();
         const balance = await provider.getBalance(address);
         const network = await provider.getNetwork();

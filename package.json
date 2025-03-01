@@ -14,7 +14,7 @@
     "@govtechsg/open-attestation": "^6.9.7",
     "@reduxjs/toolkit": "^2.6.0",
     "buffer": "^6.0.3",
-    "ethers": "^6.13.5",
+    "ethers": "5.7.0",
     "file-saver": "^2.0.5",
     "prop-types": "^15.8.1",
     "react": "^19.0.0",
